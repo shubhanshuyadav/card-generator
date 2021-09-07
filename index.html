@@ -7,11 +7,107 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Hello, world!</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <div class="container-fluid">
+    <form>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group ">
+                            <label for="inputName" class="col-form-label">Name</label>
+                        <div>
+                          <input type="text" class="form-control" id="inputName" placeholder="full name..." required maxlength="20">
+                        </div>
+                      </div>
+                      <div class="form-group ">
+                        <label for="inputFaterName" class="col-form-label">Father's Name</label>
+                        <div>
+                          <input type="text" class="form-control" id="inputFatherName" placeholder="father's name..." required maxlength="20" >
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="inputDOB" class="col-form-label" >DOB</label>
+                        <div>
+                          <input type="date" class="form-control" id="inputDOB" placeholder="date of birth..." required>
+                        </div>
+                      </div>
+                    <div class="form-group">
+                        <label for="inputEmail" class="col-form-label">Email</label>
+                        <div >
+                          <input type="email" class="form-control" id="inputEmail" placeholder="Enter your email..." required>
+                        </div>
+                      </div>
+                </div>
+    
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="inputContactNo" class="col-form-label">Contact-No</label>
+                        <div>
+                          <input type="number" class="form-control" id="inputContactNo" placeholder="Enter your mobile no..." required maxlength="1 0">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="inputRollNo" class="col-form-label">Roll-No</label>
+                        <div>
+                          <input type="text" class="form-control" id="inputRollNo" placeholder="Enter your mobile no..." required maxlength="10">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="inputBranch" class="col-form-label">Branch</label>
+                        <div>
+                          <input type="text" class="form-control" id="inputBranch" placeholder="Select your branch..." required maxlength="20">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="inputAddress" class="col-form-label">Address</label>
+                        <div>
+                          <input type="text" class="form-control" id="inputAddress" placeholder="Your address..." required maxlength="50">
+                        </div>
+                      </div>
+                     
+                </div>
+                <div class="form-group">
+                    <label for="inputImage" class="col-form-label">Uplod-image</label>
+                    <div>
+                        <input type="file" id="inputImage" name="img" accept="image/*" required>
+                    </div>
+                  </div>
+            </div>
+            </form>    
+            <div class="col-auto text-center">
+                <button type="submit" class="btn btn-primary mb-2">Submit</button>
+              </div>   
+        </div>
+        
+
+      <div id="card" class="container-fluid">
+          <div id="collageNameBox">
+              <h2>MLV Textile & Engineering Collage</h2>
+          </div>
+          <div id="imageAndInfo">
+            <div id="idImage">
+                <img src="https://pbs.twimg.com/profile_images/1343631079626989569/3YhiNUGH_400x400.jpg" alt="user id photo">
+              </div>
+              <div id="info">
+                <h id="name">Full Name</h3>
+                <h3 id="rollNo">Roll-No</h3>
+                <h3 id="branch">Branch</h3>
+                <h3 id="DOB">DOB</h3>
+                <h3 id="moileNo">Mobile-No</h3>
+                <h3 id="email">Email</h3>
+              </div>
+          </div>
+          <div id="addressBox">
+            <p id="address">Address</p>
+          </div>
+      </div>
+      
+      
+   
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
