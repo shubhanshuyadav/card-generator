@@ -12,25 +12,29 @@
 #card{
     width: 50vw;
     height: auto;
-    background-color: #00A19D;
+    background-color: #3E00FF;
     display: grid;
+    display: none;
     grid-template-rows: 1fr 4fr 1fr;
     justify-content: center;
     margin: 5rem auto;
+    padding: 1rem;
     border-radius: 10px;
-}
-#card div{
-    margin: 0;
-    padding: 0;
 }
 
 #imageAndInfo{
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    gap: 3rem;
 }
 #idImage img{
     width: 10vw;
     height: auto;
     border-radius: 5px;
+}
+
+#info h3 {
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
 }
