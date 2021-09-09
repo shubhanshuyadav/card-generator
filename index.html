@@ -1,120 +1,159 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-    <script src="index.js"></script>
-    
-   
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <div class="container-fluid">
-    <form action="#"  >
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="form-group ">
-                            <label for="inputName" class="col-form-label" >Name</label>
-                        <div>
-                          <input type="text" class="form-control field" id="inputName" name="Name" placeholder="full name..."  maxlength="20" required/>
-                        </div>
-                      </div>
-                      <div class="form-group ">
-                        <label for="inputFaterName" class="col-form-label ">Father's Name</label>
-                        <div>
-                          <input type="text" class="form-control field" id="inputFatherName"  name="Father" placeholder="father's name..." required maxlength="20" >
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <label for="inputDOB" class="col-form-label" >DOB</label>
-                        <div>
-                          <input type="date" class="form-control field" id="inputDOB"  name="DOB" placeholder="date of birth..." required>
-                        </div>
-                      </div>
-                    <div class="form-group">
-                        <label for="inputEmail" class="col-form-label">Email</label>
-                        <div >
-                          <input type="email" class="form-control field" id="inputEmail"   name="Email" placeholder="Enter your email..." required/>
-                        </div>
-                      </div>
-                </div>
-    
-                <div class="col-sm-6">
-                    <div class="form-group">
-                        <label for="inputContactNo" class="col-form-label">Contact-No</label>
-                        <div>
-                          <input type="tel" class="form-control field" id="inputContactNo"  name="Contact-No" placeholder="Enter your mobile no..." required pattern="^[0-9]{3,45}$">
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <label for="inputRollNo" class="col-form-label">Roll-No</label>
-                        <div>
-                          <input type="text" class="form-control field" id="inputRollNo"  name="Roll-No" placeholder="Enter your mobile no..." required maxlength="10">
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <label for="inputBranch" class="col-form-label">Branch</label>
-                        <div>
-                          <input type="text" class="form-control field" id="inputBranch"  name="Branch" placeholder="Select your branch..." required maxlength="20">
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <label for="inputAddress" class="col-form-label">Address</label>
-                        <div>
-                          <input type="text" class="form-control field" id="inputAddress"  name="Address" placeholder="Your address..." required maxlength="50">
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <label for="inputImage" class="col-form-label">Uplod-image</label>
-                        <div>
-                            <input type="file" id="inputImage" accept="image/*" required/>
-                        </div>
-                      </div>
-                      <div class="col-auto text-center">
-                        <button onclick="setIdInfo()" type="button" for="idDetailsForm" class="btn btn-primary mb-2">Submit</button>
-                      </div>
-                </div>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <script src="index.js"></script>
+
+
+  <title>Hello, world!</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <form>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="form-group ">
+            <label for="inputCollegeName" class="col-form-label">College</label>
+            <div>
+              <input type="text" class="form-control field" id="inputCollegeName" placeholder="College name..."
+                maxlength="50" required />
             </div>
-            </form>            
+          </div>
+          <div class="form-group ">
+            <label for="inputName" class="col-form-label">Name</label>
+            <div>
+              <input type="text" class="form-control field" id="inputName" name="Name" placeholder="Full name..."
+                maxlength="20" required />
+            </div>
+          </div>
+          <div class="form-group ">
+            <label for="inputFaterName" class="col-form-label ">Father's Name</label>
+            <div>
+              <input type="text" class="form-control field" id="inputFatherName" name="Father"
+                placeholder="ather's name..." required maxlength="50">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputDOB" class="col-form-label">DOB</label>
+            <div>
+              <input type="date" class="form-control field" id="inputDOB" name="DOB" placeholder="date of birth..."
+                required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputEmail" class="col-form-label">Email</label>
+            <div>
+              <input type="email" class="form-control field" id="inputEmail" name="Email"
+                placeholder="Enter your email..." required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputBackgroungColor" class="col-form-label">Background</label>
+            <div>
+              <input type="text" class="form-control field" id="inputBackgroundColor" name="Color"
+                placeholder="Enter hex color code..." required maxlength="7" />
+            </div>
+          </div>
         </div>
-        
-
-      <div id="card" class="container-fluid">
-          <div id="collageNameBox">
-              <h2>MLV Textile & Engineering Collage</h2>
+        <div class="col-sm-6">
+          <div class="form-group">
+            <label for="inputContactNo" class="col-form-label">Contact-No</label>
+            <div>
+              <input type="tel" class="form-control field" id="inputContactNo" name="Contact-No"
+                placeholder="Enter your mobile no..." required pattern="^[0-9]{3,45}$">
+            </div>
           </div>
-          <div id="imageAndInfo">
-            <div id="idImage">
-                <img id="imageId"src="" alt="user id photo">
-              </div>
-              <div id="info">
-                <h3 id="Name">Full Name</h3>
-                <h3 id="Father">Full Name</h3>
-                <h3 id="Roll-No">Roll-No</h3>
-                <h3 id="Branch">Branch</h3>
-                <h3 id="DOB">DOB</h3>
-                <h3 id="Contact-No">Mobile-No</h3>
-                <h3 id="Email">Email</h3>
-              </div>
+          <div class="form-group">
+            <label for="inputRollNo" class="col-form-label">Roll-No</label>
+            <div>
+              <input type="text" class="form-control field" id="inputRollNo" name="Roll-No"
+                placeholder="Enter your mobile no..." required maxlength="10">
+            </div>
           </div>
-          <div id="addressBox">
-            <p id="Address">Address</p>
+          <div class="form-group">
+            <label for="inputBranch" class="col-form-label">Branch</label>
+            <div>
+              <input type="text" class="form-control field" id="inputBranch" name="Branch"
+                placeholder="Select your branch..." required maxlength="20">
+            </div>
           </div>
+          <div class="form-group">
+            <label for="inputAddress" class="col-form-label">Address</label>
+            <div>
+              <input type="text" class="form-control field" id="inputAddress" name="Address"
+                placeholder="Your address..." required maxlength="50">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputTextColor" class="col-form-label">Text-Color</label>
+            <div>
+              <input type="text" class="form-control field" id="inputTextColor" placeholder="Enter text color code..."
+                required maxlength="50">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputImage" class="col-form-label">Uplod-image</label>
+            <div>
+              <input type="file" id="inputImage" accept="image/*" required />
+            </div>
+          </div>
+        </div>
       </div>
-      
-      
-   
+        <div class="col-auto text-center">
+          <button id="submitBtn" class="btn btn-primary mb-2">Submit</button>
+        </div>
+    </form>
+  </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
+
+
+  <div id="card" class="container-fluid">
+    <div>
+      <h2 id="College-Name">MLV Textile & Engineering College</h2>
+    </div>
+    <div id="imageAndInfo">
+      <div>
+        <img id="imageId" src="" alt="user id photo">
+      </div>
+      <div id="info">
+        <h3 id="Name"></h3>
+        <h3 id="Father"></h3>
+        <h3 id="Roll-No"></h3>
+        <h3 id="Branch"></h3>
+        <h3 id="DOB"></h3>
+        <h3 id="Contact-No"></h3>
+        <h3 id="Email"></h3>
+      </div>
+    </div>
+    <div>
+      <p id="Address">Address</p>
+    </div>
+  </div>
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
