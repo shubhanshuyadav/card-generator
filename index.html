@@ -102,9 +102,9 @@
             </div>
           </div>
           <div class="form-group">
-            <label for="inputImage" class="col-form-label">Uplod-image</label>
+            <label for="inputImage" class="col-form-label" style="cursor: pointer;">Uplod-image</label>
             <div>
-              <input type="file" id="inputImage" accept="image/*" required />
+              <input type="file" id="inputImage" accept="image/*" required onchange="loadFile(event)" style="display: none;" />
             </div>
           </div>
         </div>
