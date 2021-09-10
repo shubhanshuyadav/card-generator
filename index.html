@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Acme&family=Karma:wght@300&family=Kaushan+Script&family=Merriweather+Sans:wght@300&family=Press+Start+2P&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
@@ -19,14 +22,14 @@
 
 <body>
   <div class="container-fluid">
-    <form>
+    <form class="text-left">
       <div class="row">
         <div class="col-sm-6">
           <div class="form-group ">
             <label for="inputCollegeName" class="col-form-label">College</label>
             <div>
-              <input type="text" class="form-control field" id="inputCollegeName" placeholder="College name..."
-                maxlength="50" required />
+              <input type="text" class="form-control field" id="inputCollegeName"
+                value="MLV Textile & Engineering College" placeholder="College name..." maxlength="50" required />
             </div>
           </div>
           <div class="form-group ">
@@ -104,29 +107,27 @@
           <div class="form-group">
             <label for="inputImage" class="col-form-label" style="cursor: pointer;">Uplod-image</label>
             <div>
-              <input type="file" id="inputImage" accept="image/*" required onchange="loadFile(event)" style="display: none;" />
+              <input type="file" id="inputImage" accept="image/*" required onchange="loadFile(event)"
+                style="display: none;" />
             </div>
           </div>
         </div>
       </div>
-        <div class="col-auto text-center">
-          <button id="submitBtn" class="btn btn-primary mb-2">Submit</button>
-        </div>
+      <div class="col-auto text-center">
+        <button id="submitBtn" class="btn btn-primary mb-2">Submit</button>
+      </div>
     </form>
   </div>
 
-
-
   <div id="card" class="container-fluid">
-    <div  id="cardHeader">
-      <h2 id="College-Name">MLV Textile & Engineering College</h2>
-    </div>
-    <div id="imageAndInfo">
+      <h1 id="College-Name">MLV Textile & Engineering College</h1>
       <div id="imageContainer">
         <img id="imageId" src="" alt="user id photo">
       </div>
-      <div id="info">
+      <div id="nameText">
         <h3 id="Name"></h3>
+      </div>
+      <div id="info" class="text-left">
         <h3 id="Father"></h3>
         <h3 id="Roll-No"></h3>
         <h3 id="Branch"></h3>
@@ -134,11 +135,12 @@
         <h3 id="Contact-No"></h3>
         <h3 id="Email"></h3>
       </div>
+      <div>
+        <p id="Address"></p>
+      </div>
     </div>
-    <div>
-      <p id="Address">Address</p>
-    </div>
-  </div>
+
+
 
 
 

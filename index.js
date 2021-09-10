@@ -1,5 +1,4 @@
-let cardInfo={"College-Name":"inputCollegeName","Name":"inputName","Father":"inputFatherName","Email":"inputEmail","Roll-No":"inputRollNo","Contact-No":"inputContactNo","Branch":"inputBranch","DOB":"inputDOB","Address":"inputAddress"}
-console.log();
+let cardInfo={"Father":"inputFatherName","Email":"inputEmail","Roll-No":"inputRollNo","Contact-No":"inputContactNo","Branch":"inputBranch","DOB":"inputDOB"}
 var loadFile = function(event) {
 	var image = document.getElementById('imageId');
 	image.src = URL.createObjectURL(event.target.files[0]);
@@ -7,17 +6,22 @@ var loadFile = function(event) {
 
 const addCardInfo=(e)=>{
 e.preventDefault();
-if(validate()){
+const Name=document.getElementById("Name");
+const Address=document.getElementById("Address");
+const College=document.getElementById("College-Name");
+Name.innerHTML=document.getElementById("inputName").value;
+Address.innerHTML=document.getElementById("inputAddress").value;
+College.innerHTML=document.getElementById("inputCollegeName").value;
 const BackgroundColor=document.getElementById("inputBackgroundColor").value;
 const TextColor=document.getElementById("inputTextColor").value;
 for(let info in cardInfo){
-  document.getElementById(info).innerHTML=info+": "+document.getElementById(cardInfo[info]).value;
+  document.getElementById(info).innerHTML=info+" :  "+document.getElementById(cardInfo[info]).value;
 }  
 document.getElementById("card").style.background=BackgroundColor;
 document.getElementById("card").style.color=TextColor;
-document.getElementById("card").style.display="grid";
+document.getElementById("card").style.display="flex";
 }
-}
+
 
 let validate=function(){
 let email=document.getElementById('inputEmail').value;
