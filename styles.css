@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -8,16 +9,13 @@ body{
 }
 
 #card{
-    display: flex;
     display: none;
-    flex-direction: column;
-    justify-content: space-between;
     width: 30vw;
     background: #C2FFD9;
-    min-height: auto;
-    margin: 2rem auto 0.8rem auto;
+    margin: 4rem auto 0.8rem auto;
     border-radius: 5px;
     padding: 1rem 2rem;
+    word-wrap: break-word;
 }
 
 #card img{
@@ -43,12 +41,6 @@ body{
 #card p{
     font-size: 1rem;
     font-family: 'Acme', sans-serif;
-}
-#info{
-    padding: 1rem;
-}
-#nameText{
-    padding: 0;
 }
  
 #nameText h3{
