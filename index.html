@@ -110,7 +110,7 @@
             </div>
           </div>
           <div class="form-group">
-            <label for="inputImage" class="col-form-label" style="cursor: pointer;">Uplod-image</label>
+            <label for="inputImage" class="col-form-label btn btn-success style="cursor: pointer;">Uplod-image</label>
             <div>
               <input type="file" id="inputImage" accept="image/*" required onchange="loadFile(event)"
                 style="display: none;" />
@@ -124,24 +124,29 @@
     </form>
   </div>
 
-  <div id="card" class="container-fluid d-flex flex-column vw-30 vh-auto">
-      <h1 id="College-Name">MLV Textile & Engineering College</h1>
+  <div id="card" class="container-fluid flex-column vw-30 vh-auto" style="width: 30vw;
+  margin: 4rem auto 0.8rem auto;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  word-wrap: break-word;">
+      <h1 id="College-Name" class="font-weight-bold" style="font-size: 1.6rem;font-family: 'Acme', sans-serif;">MLV Textile & Engineering College</h1>
       <div id="imageContainer">
-        <img id="imageId" src="" alt="user id photo">
+        <img style=" width: 10vw;height: auto;border-radius: 50%;padding-bottom: 1rem;" id="imageId" src="" alt="user id photo">
       </div>
       <div id="nameText">
-        <h3 id="Name"></h3>
+        <h6 id="Name" style=" font-family: 'Press Start 2P', cursive;"></h6>
       </div>
-      <div id="info" class="text-left p-1">
-        <h3 id="Father"></h3>
-        <h3 id="Roll-No"></h3>
-        <h3 id="Branch"></h3>
-        <h3 id="DOB"></h3>
-        <h3 id="Contact-No"></h3>
-        <h3 id="Email"></h3>
+      <div id="info" class="text-left p-1 text-black" style=" font-family: 'Karma', serif;
+      font-weight: 600px;">
+        <h6 id="Father"></h6>
+        <h6 id="Branch"></h6>
+        <h6 id="Roll-No"></h6>
+        <h6 id="DOB"></h6>
+        <h6 id="Contact-No"></h6>
+        <h6 id="Email"></h6>
       </div>
-      <div>
-        <p id="Address"></p>
+      <div id="address" style=" font-family: 'Acme', sans-serif;">
+        <h6 id="Address"></h6>
       </div>
     </div>
 

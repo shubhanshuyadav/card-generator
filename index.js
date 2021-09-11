@@ -8,7 +8,7 @@ var loadFile = function (event) {
   image.src = URL.createObjectURL(event.target.files[0]);
 }
 
-let validate = function () {
+let valid= function () {
   let contact = document.getElementById("inputContactNo").value;
   let email = document.getElementById('inputEmail').value;
   let image = document.getElementById("imageId").src;
@@ -72,6 +72,7 @@ let validate = function () {
 
 const addCardInfo = (event) => {
   event.preventDefault();
+  if(valid()){
     for (let info in cardInfoSpecial) {
       document.getElementById(info).innerHTML = document.getElementById(cardInfoSpecial[info]).value;
     }
@@ -88,7 +89,9 @@ const addCardInfo = (event) => {
     document.getElementById("card").style.display="flex";
     window.location="#card";
   }
-
+  }
+ 
+    
 document.addEventListener('DOMContentLoaded', () => {
   document.getElementById("submitBtn").addEventListener('click', addCardInfo);
   

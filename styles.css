@@ -9,44 +9,8 @@ body{
 }
 
 #card{
-    display: none;
-    width: 30vw;
     background: #C2FFD9;
-    margin: 4rem auto 0.8rem auto;
-    border-radius: 5px;
-    padding: 1rem 2rem;
-    word-wrap: break-word;
+    display: flex;
+    display: none;
 }
-
-#card img{
-    width: 10vw;
-    height: auto;
-    border-radius: 50%;
-    padding-bottom: 1rem;
-}
-
-#card h1{
-    font-size: 1.6rem;
-    font-weight: bold;
-    font-family: 'Acme', sans-serif;
-}
-
-#card h3{
-    color: black;
-    font-size: 1rem;
-    font-family: 'Karma', serif;
-    font-weight: 600px;
-}
-
-#card p{
-    font-size: 1rem;
-    font-family: 'Acme', sans-serif;
-}
- 
-#nameText h3{
-    font-family: 'Press Start 2P', cursive;
-    font-size:1rem;
-    display: inline;
-}
-
 
